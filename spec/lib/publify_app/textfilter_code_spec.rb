@@ -95,7 +95,7 @@ RSpec.describe PublifyApp::Textfilter::Code, type: :model do
 
       filter = TextFilter.markdown
 
-      assert_equal expects_markdown, filter.filter_text(text)
+      expect(filter.filter_text(text)).to eq expects_markdown
     end
   end
 end
