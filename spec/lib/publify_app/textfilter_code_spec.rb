@@ -85,11 +85,11 @@ RSpec.describe PublifyApp::Textfilter::Code, type: :model do
 
       expects_markdown = <<~HTML.strip
         <p><em>header text here</em></p>
-        <div class=\"CodeRay\"><pre><span class=\"CodeRay\"><span class=\"keyword\">class</span> <span class=\"class\">test</span>
-          <span class=\"keyword\">def</span> <span class=\"function\">method</span>
-            <span class=\"string\"><span class=\"delimiter\">&quot;</span><span class=\"content\">foo</span><span class=\"delimiter\">&quot;</span></span>
-          <span class=\"keyword\">end</span>
-        <span class=\"keyword\">end</span></span></pre></div>
+        <div class="CodeRay"><pre><span class="CodeRay"><span class="keyword">class</span> <span class="class">test</span>
+          <span class="keyword">def</span> <span class="function">method</span>
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">foo</span><span class="delimiter">&quot;</span></span>
+          <span class="keyword">end</span>
+        <span class="keyword">end</span></span></pre></div>
         <p><em>footer text here</em></p>
       HTML
 
