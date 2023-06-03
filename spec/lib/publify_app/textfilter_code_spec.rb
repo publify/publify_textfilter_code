@@ -19,26 +19,26 @@ RSpec.describe PublifyApp::Textfilter::Code, type: :model do
         describe "single line" do
           it "mades nothin if no args" do
             result = filter.filter_text("<publify:code>foo-code</publify:code>")
-            expect(result).
-              to eq '<div class="CodeRay"><pre>foo-code</pre></div>'
+            expect(result)
+              .to eq '<div class="CodeRay"><pre>foo-code</pre></div>'
           end
 
           it "parses ruby lang" do
             result = filter.filter_text('<publify:code lang="ruby">foo-code</publify:code>')
-            expect(result).
-              to eq('<div class="CodeRay"><pre><span class="CodeRay">' \
-                    "foo-code</span></pre></div>")
+            expect(result)
+              .to eq('<div class="CodeRay"><pre><span class="CodeRay">' \
+                     "foo-code</span></pre></div>")
           end
 
           it "parses ruby and xml in same sentence but not in same place" do
-            result = filter.
-              filter_text('<publify:code lang="ruby">foo-code</publify:code>' \
-                          ' blah blah <publify:code lang="xml">zzz</publify:code>')
-            expect(result).
-              to eq '<div class="CodeRay"><pre><span class="CodeRay">' \
-                    "foo-code</span></pre></div> blah blah" \
-                    ' <div class="CodeRay"><pre><span class="CodeRay">' \
-                    "zzz</span></pre></div>"
+            result = filter
+              .filter_text('<publify:code lang="ruby">foo-code</publify:code>' \
+                           ' blah blah <publify:code lang="xml">zzz</publify:code>')
+            expect(result)
+              .to eq '<div class="CodeRay"><pre><span class="CodeRay">' \
+                     "foo-code</span></pre></div> blah blah" \
+                     ' <div class="CodeRay"><pre><span class="CodeRay">' \
+                     "zzz</span></pre></div>"
           end
         end
 
