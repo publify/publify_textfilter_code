@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency "publify_core", "~> 10.0.0"
 
   s.add_development_dependency "rspec-rails", "~> 6.0"
-  s.add_development_dependency "rubocop", "~> 1.53.0"
+  s.add_development_dependency "rubocop", "~> 1.55.1"
   s.add_development_dependency "rubocop-performance", "~> 1.18.0"
   s.add_development_dependency "rubocop-rails", "~> 2.20.2"
   s.add_development_dependency "rubocop-rspec", "~> 2.22.0"
