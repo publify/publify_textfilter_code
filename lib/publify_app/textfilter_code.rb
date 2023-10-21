@@ -5,9 +5,7 @@ require "htmlentities"
 
 class PublifyApp
   class Textfilter
-    class Code < TextFilterPlugin
-      include TextFilterPlugin::MacroPre
-
+    class Code < TextFilterPlugin::MacroPre
       plugin_display_name "Code"
       plugin_description "Apply coderay highlighting to a code block"
 
