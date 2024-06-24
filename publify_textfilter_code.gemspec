@@ -28,6 +28,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rubocop-rails", "~> 2.25.0"
   s.add_development_dependency "rubocop-rspec", "~> 3.0.1"
   s.add_development_dependency "simplecov", "~> 0.22.0"
-  s.add_development_dependency "sqlite3", "~> 1.4"
+  s.add_development_dependency "sqlite3", "~> 2.0"
   s.metadata["rubygems_mfa_required"] = "true"
 end
