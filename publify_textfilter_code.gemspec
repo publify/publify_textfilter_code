@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "htmlentities", "~> 4.3"
   s.add_dependency "publify_core", "~> 10.0.0"
 
-  s.add_development_dependency "rspec-rails", "~> 7.1"
+  s.add_development_dependency "appraisal", "~> 2.3"
+  s.add_development_dependency "rspec-rails", "~> 6.0"
   s.add_development_dependency "rubocop", "~> 1.77.0"
   s.add_development_dependency "rubocop-performance", "~> 1.25.0"
   s.add_development_dependency "rubocop-rails", "~> 2.32.0"
