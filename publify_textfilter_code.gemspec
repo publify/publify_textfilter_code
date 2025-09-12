@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files       = File.open("Manifest.txt").readlines.map(&:chomp)
 
-  s.required_ruby_version = ">= 3.0.0"
+  s.required_ruby_version = ">= 3.2.0"
 
   s.add_dependency "coderay", "~> 1.1.0"
   s.add_dependency "htmlentities", "~> 4.3"
