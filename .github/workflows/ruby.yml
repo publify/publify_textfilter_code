@@ -9,12 +9,12 @@ name: CI
     branches:
       - master
       - 9-2-stable
+      - 10-0-stable
   pull_request:
     branches:
       - master
       - 9-2-stable
-  schedule:
-    - cron: '16 4 12 * *'
+      - 10-0-stable
   workflow_dispatch:
 
 jobs:
