@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "Code text filter sidebar for the Publify blogging system."
   s.license     = "MIT"
 
-  s.files       = File.open("Manifest.txt").readlines.map(&:chomp)
+  s.files       = File.readlines("Manifest.txt").map(&:chomp)
 
   s.required_ruby_version = ">= 3.2.0"
 
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "appraisal", "~> 2.3"
   s.add_development_dependency "rspec-rails", "~> 7.1"
-  s.add_development_dependency "rubocop", "~> 1.82.1"
+  s.add_development_dependency "rubocop", "~> 1.86.0"
   s.add_development_dependency "rubocop-capybara", "~> 2.22.1"
   s.add_development_dependency "rubocop-factory_bot", "~> 2.28.0"
   s.add_development_dependency "rubocop-performance", "~> 1.26.1"
