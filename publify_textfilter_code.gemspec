@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "Code text filter sidebar for the Publify blogging system."
   s.license     = "MIT"
 
-  s.files       = File.open("Manifest.txt").readlines.map(&:chomp)
+  s.files       = File.readlines("Manifest.txt").map(&:chomp)
 
   s.required_ruby_version = ">= 3.2.0"
 
