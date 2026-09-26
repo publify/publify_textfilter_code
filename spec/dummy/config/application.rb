@@ -2,8 +2,6 @@
 
 require_relative "boot"
 
-# FIXME: Remove after support for Rails < 7.1 is dropped
-require "logger"
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -25,7 +23,7 @@ require "publify_textfilter_code"
 module Dummy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 7.1
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
