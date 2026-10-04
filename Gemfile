@@ -17,6 +17,6 @@ group :development, :test do
   gem "rubocop-rspec_rails", "~> 2.32"
   gem "simplecov", "~> 1.2"
   gem "sqlite3", "~> 2.9"
-end
 
-gem "publify_core", git: "https://github.com/publify/publify_core.git"
+  gem "publify_core", git: "https://github.com/publify/publify_core.git"
+end
