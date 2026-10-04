@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "coderay", "~> 1.1.0"
   s.add_dependency "htmlentities", "~> 4.3"
-  s.add_dependency "publify_core", "~> 10.0.0"
+  s.add_dependency "publify_core", "~> 11.0.0"
 
   s.metadata["rubygems_mfa_required"] = "true"
 end
