@@ -7,5 +7,4 @@ lib/publify_textfilter_code.rb
 lib/publify_textfilter_code/engine.rb
 lib/publify_textfilter_code/version.rb
 lib/tasks/appraisal.rake
-lib/tasks/manifest.rake
 lib/tasks/publify_textfilter_code_tasks.rake
